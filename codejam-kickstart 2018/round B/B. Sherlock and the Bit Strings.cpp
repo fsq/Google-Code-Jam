@@ -44,7 +44,6 @@ void dp() {
 			}))
 				f[i][j] = min(INF, f[i+1][(j & ((1<<(mx-1))-1)) << 1]
 						+ f[i+1][(j & ((1<<(mx-1))-1)) << 1 | 1]);
-
 }
 
 int str2dec(string ans) {
